@@ -86,7 +86,7 @@ ol {
 .content__video-card-description-container {
   order: 2;
   width: 196px;
-  height: 30px;
+  min-height: 30px;
   flex-grow: 1;
 }
 
