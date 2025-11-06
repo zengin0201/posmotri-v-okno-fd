@@ -15,9 +15,10 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  padding-left: 30px;
 }
 
 h1,
@@ -49,89 +50,22 @@ ol {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 
-.content{
+.content {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  gap: 30px;
+  gap: 28px;
 }
 
-.search-form{
-  
+.search-form {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items:flex-start;
-  margin-bottom:-7px;
-
+  align-items: flex-start;
 }
-
-
-
-.content__video-card{
-  flex-direction: column;
-}
-.content__video-card {
-  display: flex;
-  flex-direction: column;
-}
-
-.content__video-card-thumbnail {
-  order: 1;
-}
-
-.content__video-card-description-container {
-  order: 2;
-}
-
-.result__video-container{
-  width: 711px;
-  height: 386px;
-  margin-bottom: 16px;
-
-}
-
-.result__video{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-
-.content__list{
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  cursor: pointer;
-
-}
-
-.content__list-item{
-  padding-left: 3px;
-  padding-right: 3px;
-}
-.content__list-item:active{
-  background-color: #545050;
-}
-
-.content__card-link:focus-visible{
-  border: 2px solid white;
-}
-
-.content__list:hover{
-  text-decoration: underline;
-}
-.content__list-container {
-  height: 298px;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
 
 .content__video-card {
   display: flex;
@@ -140,45 +74,92 @@ ol {
   gap: 0;
 }
 
-
 .content__video-card-thumbnail {
+  order: 1;
   width: 194px;
   height: 103px;
   min-width: 194px;
   object-fit: cover;
   object-position: center;
 }
+
 .content__video-card-description-container {
+  order: 2;
   width: 196px;
   height: 30px;
   flex-grow: 1;
-  padding-right: 10px;
 }
-.search-form__fieldset-title{
-  font-family: "Fira Sans Condensed";
+
+.result__video-container {
+  width: 711px;
+  height: 386px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.result__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  cursor: pointer;
+}
+
+.content__list-item {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.content__card-link:active {
+  background-color: #545050;
+}
+
+.content__card-link:focus-visible {
+  border: 2px solid white;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+.content__list-container {
+  height: 298px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+
+.search-form__fieldset-title {
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  
 }
-.search-form__label-text{
-  font-family: "Fira Sans Condensed";
+
+.search-form__label-text {
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
-
 }
 
-
-.title{
-  font-family: "Oswald",sans-serif;
+.title {
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 75px;
   text-transform: uppercase;
   line-height: 94%;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
-.content__video-card-title{
-  font-family: "Oswald";
+.content__video-card-title {
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   color: white;
   text-decoration: none;
@@ -189,8 +170,8 @@ ol {
   text-overflow: ellipsis;
 }
 
-.content__video-card-description{
-  font-family: "Fira Sans Condensed";
+.content__video-card-description {
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: white;
@@ -199,6 +180,7 @@ ol {
   white-space: nowrap;
   overflow: hidden;
 }
+
 .content__card-link {
   display: block;
   width: 100%;
@@ -206,9 +188,11 @@ ol {
   border: 1px solid transparent;
   text-decoration: none;
 }
-.content__accent{
+
+.content__accent {
   color: #545050;
 }
+
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
@@ -217,63 +201,61 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
-} 
+}
 
-.search-form__textfield{
+.search-form__textfield {
   min-width: 225px;
   border: none;
   color: white;
   border-top: 2px white solid;
   border-bottom: 2px white solid;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
 }
 
-.search-form__fieldset:first-of-type{
-  
+.search-form__fieldset:first-of-type {
   position: relative;
   border: none;
-
 }
-.search-form__fieldset:last-of-type{
+.search-form__fieldset:last-of-type {
   border: none;
 }
 
-.search-form__checkbox-list{
+.search-form__checkbox-list {
   display: flex;
   gap: 14px;
 }
 
-.search-form__label{
+.search-form__label {
   display: flex;
   align-items: center;
   width: fit-content;
   gap: 5px;
   cursor: pointer;
 }
-input{
+
+input {
   background-color: transparent;
   appearance: none;
 }
 
-input::placeholder{
-  color:rgb(255 255 255 / 0.7);
+input::placeholder {
+  color: rgb(255 255 255 / 0.7);
 }
 
-.search-form__label:has(:focus-visible){
+.search-form__label:has(:focus-visible) {
   outline: 1px white solid;
 }
 
-.search-form__pseudo-checkbox{
+.search-form__pseudo-checkbox {
   display: block;
   width: 19px;
   height: 19px;
   border: 2px solid white;
   padding: 1px;
-
 }
 
-.search-form__pseudo-checkbox::after{
+.search-form__pseudo-checkbox::after {
   content: "";
   display: block;
   width: 100%;
@@ -286,51 +268,49 @@ input:checked + .search-form__pseudo-checkbox::after {
   opacity: 1;
 }
 
-.search-form__fieldset:hover:last-of-type{
+.search-form__checkbox-list .search-form__label:hover {
   text-decoration: underline;
-
 }
 
-.button{
+.button {
   background-color: transparent;
   color: white;
   border: 1px white solid;
   height: 34px;
 }
 
-.search-form__submit-button{
+.search-form__submit-button {
   align-self: flex-end;
   min-width: 194px;
-  font-weight:bold;
+  font-weight: bold;
   font-size: 18px;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   cursor: pointer;
-
 }
+
 .more-button {
   align-self: flex-start;
   margin-top: 0;
   width: 100%;
   min-height: 34px;
   font-weight: bold;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   cursor: pointer;
-
 }
-.button:active{
+
+.button:active {
   background-color: #545050;
 }
-.button:hover{
+
+.button:hover {
   text-decoration: underline;
 }
-.button:focus-visible{
+
+.button:focus-visible {
   border: 3px solid white;
 }
-.result__video-container{
-  position: relative;
 
-}
-.content__list-container{
-  position: relative;
+.content__card-link_current {
+  background-color: #545050;
 }
