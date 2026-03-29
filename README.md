@@ -3,6 +3,9 @@ https://github.com/zengin0201/posmotri-v-okno-fd.git
 
 A sophisticated video-streaming dashboard that allows users to explore cityscapes across different times of day. This project focuses on high-quality UI/UX implementation, custom form controls, and efficient DOM management using HTML5 templates.
 
+## 📸 Preview
+<img width="1265" height="654" alt="image" src="https://github.com/user-attachments/assets/07c88dd1-e606-4a3a-8ab4-d1ae0e8ed028" />
+
 
 
 ## 🌟 Key Features
